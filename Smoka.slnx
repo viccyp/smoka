@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Smoka/Smoka.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Smoka.Tests/Smoka.Tests.csproj" />
+  </Folder>
+</Solution>
