@@ -14,10 +14,7 @@ namespace Smoka.Controllers
         public IActionResult GetAllAlbums()
         {
             var albums = _albumService.GetAllAlbums();
-            return Ok(albums);
+                return Ok(albums);
         }
     }
-
-
-
 }

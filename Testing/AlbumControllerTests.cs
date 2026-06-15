@@ -31,7 +31,7 @@ public class AlbumControllerTests
     }
 
     [Test]
-    public void GetAllAlbums_ReturnsFullListOfAlbums()
+    public void GetAllAlbums_ReturnsOkResult_AndFullListOfAlbums()
     {
         _albumServiceMock.Setup(service => service.GetAllAlbums()).Returns(_albums);
 
@@ -42,5 +42,21 @@ public class AlbumControllerTests
         var okResult = (OkObjectResult)result;
 
         Assert.That(okResult.Value, Is.EqualTo(_albums));
+    }
+
+    [Test]
+    public void GetAllAlbums_ReturnEmptyList_WhenNoAlbumsExist()
+    {
+        _albumServiceMock.Setup(service => service.GetAllAlbums()).Returns(new List<Album>());
+
+        var result = _albumController.GetAllAlbums();
+
+        var okResult = result as OkObjectResult;
+
+        Assert.That(okResult, Is.Not.Null);
+
+        var albums = okResult!.Value as List<Album>;
+
+        Assert.That(albums, Is.Empty);
     }
 }
