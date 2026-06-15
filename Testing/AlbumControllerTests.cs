@@ -59,4 +59,28 @@ public class AlbumControllerTests
 
         Assert.That(albums, Is.Empty);
     }
+
+    [Test]
+    public void GetAlbumByID_ReturnsOk_WhenAlbumExists()
+    {
+        _albumServiceMock.Setup(service => service.GetAlbumByID(1)).Returns(_albums[0]);
+
+        var result = _albumController.GetAlbumByID(1);
+
+        Assert.That(result, Is.TypeOf<OkObjectResult>());
+
+        var okResult = (OkObjectResult)result;
+
+        Assert.That(okResult.Value, Is.EqualTo(_albums[0]));
+    }
+
+    [Test]
+    public void GetAlbumByID_ReturnsNotFound_WhenAlbumDoesNotExist()
+    {
+        _albumServiceMock.Setup(service => service.GetAlbumByID(1)).Returns((Album?)null);
+
+        var result = _albumController.GetAlbumByID(1);
+
+        Assert.That(result, Is.TypeOf<NotFoundResult>());
+    }
 }

@@ -16,5 +16,18 @@ namespace Smoka.Controllers
             var albums = _albumService.GetAllAlbums();
                 return Ok(albums);
         }
+
+        [HttpGet]
+        public IActionResult GetAlbumByID(int id)
+        {
+            var album = _albumService.GetAlbumByID(id);
+
+            if (album == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(album);
+        }
     }
 }
