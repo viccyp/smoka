@@ -1,6 +1,6 @@
-﻿namespace Smoka.Tests;
+﻿namespace Testing;
 
-public class AlbumControllerTests
+public class AlbumRepositoryTests
 {
     [SetUp]
     public void Setup()
