@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "Led Zeppelin",
+    "genre": "Rock",
+    "releaseDate": 1971
+  },
+  {
+    "id": 4,
+    "title": "Siembra",
+    "genre": "Salsa",
+    "releaseDate": 1978
+  },
+  {
+    "id": 5,
+    "title": "The Poison",
+    "genre": "Metalcore",
+    "releaseDate": 2005
+  },
+  {
+    "id": 6,
+    "title": "Salute to the Sun",
+    "genre": "Jazz",
+    "releaseDate": 2020
+  },
+  {
+    "id": 7,
+    "title": "Aja",
+    "genre": "Jazz Rock",
+    "releaseDate": 1977
+  },
+  {
+    "id": 8,
+    "title": "Horizons",
+    "genre": "Jazz",
+    "releaseDate": 2023
+  },
+  {
+    "id": 9,
+    "title": "Forever",
+    "genre": "Dream Pop",
+    "releaseDate": 2021
+  },
+  {
+    "id": 10,
+    "title": "Leftism",
+    "genre": "Electronic",
+    "releaseDate": 1995
+  },
+  {
+    "id": 11,
+    "title": "Essa Noite Bateu Com um Sonho",
+    "genre": "Indie Rock",
+    "releaseDate": 2016
+  },
+  {
+    "id": 12,
+    "title": "Gêmeos",
+    "genre": "Indie Rock",
+    "releaseDate": 2012
+  },
+  {
+    "id": 13,
+    "title": "Rising",
+    "genre": "Jazz",
+    "releaseDate": 2021
+  },
+  {
+    "id": 14,
+    "title": "Groovy",
+    "genre": "Jazz",
+    "releaseDate": 1957
+  },
+  {
+    "id": 15,
+    "title": "Night Lights",
+    "genre": "Jazz",
+    "releaseDate": 1963
+  }
+]
