@@ -11,10 +11,16 @@ namespace Smoka.Services
         {
             return _albumRepository.GetAllAlbums();
         }
+
+        public Album? GetAlbumByID(int id)
+        {
+            return _albumRepository.GetAlbumByID(id);
+        }
     }
 
     public interface IAlbumService
     {
         List<Album> GetAllAlbums();
+        Album? GetAlbumByID(int id);
     }
 }
